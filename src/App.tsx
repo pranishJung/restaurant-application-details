@@ -5,10 +5,13 @@ import Menu from './components/Menu';
 import Order from './components/Order';
 import Reservation from './components/Reservation';
 import Review from './components/Review';
+import Navbar from './components/Navbar';
+
 
 const App: React.FC = () => {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/menu" element={<Menu />} />
